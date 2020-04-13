@@ -1,0 +1,364 @@
+
+
+.main__section-about{
+
+    background-color: #f7f7f7;
+    padding-top: 25rem;
+    margin-top: -20rem;
+    padding-bottom: 25rem;
+    position: relative;
+    z-index: 9;
+
+    @include respond(phone){
+        margin-top: -30rem;
+        padding-top: 30rem;
+    }
+
+    .fix-on-about{
+    @include respond(phone-small){
+        
+        margin-left:-1rem;
+    }
+    }   
+}
+
+.main__about-column2{
+
+    @include respond(tab-port){
+        padding-top: 7rem;
+        //padding-left: 4rem;
+    }
+    @include respond(phone){
+        padding-top: 7rem;
+        //padding-left: 4rem;
+    }
+    @include respond(phone-small){
+        
+        padding-top: 5rem;
+    }
+
+}
+.main__about-column1{
+
+    @include respond(tab-port){
+       
+        //padding-left: 4rem;
+    }
+    @include respond(phone){
+        margin-top: -5rem;
+        //padding-left: 4rem;
+    }
+    @include respond(phone-small){
+        font-size: 1.5rem;
+        //padding-left: 4rem;
+    }
+
+}
+
+.up-z-index{
+
+
+z-index: 15;
+
+}
+
+.main__section-feature{ 
+
+    position: relative;
+
+    padding: 17rem 2rem 20rem 2rem;
+   
+    
+    background-image: -webkit-gradient(linear,
+            left top, right bottom,
+            from(rgba(126, 213, 111, 0.8)),
+            to(rgba(40, 180, 131, 0.8))),
+        url(/images/hero.jpg);
+   
+    
+    background-image: linear-gradient(to right bottom,
+            rgba(126, 213, 111, 0.8),
+            rgba(40, 180, 131, 0.8)),
+        url(/images/hero.jpg);
+    background-size: cover;
+  
+    -webkit-clip-path: polygon(0 20%, 100% 0%, 100% 75%, 0 100%);
+  
+            clip-path: polygon(0 20%, 100% 0%, 100% 75%, 0 100%);
+    margin-top: -27rem;
+    margin-bottom: 15rem;
+    
+    z-index: 50;
+
+        .fa-compass,
+        .fa-globe,
+        .fa-map,
+        .fa-heart
+        {
+
+            color: rgba(40, 180, 131, 0.8);
+        }
+
+        @include respond(tab-port){
+            
+            -webkit-clip-path: polygon(0 13%, 100% 0%, 100% 80%, 0 100%);
+            
+                    clip-path: polygon(0 13%, 100% 0%, 100% 80%, 0 100%);
+            padding-bottom: 25rem;
+            
+        }
+        @include respond(phone){
+            
+            padding-top: 20rem;
+            -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
+                    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
+            
+        }
+        @include respond(phone-small){
+            
+            padding-bottom: 20rem;
+            
+            
+        }
+
+
+
+}
+
+
+.main__section-tour{
+
+    background-image: url(/images/undraw_travel_plans_li01.svg),url(/images/undraw_travel_booking_6koc.svg);
+    background-position: 
+    top -30rem right 1rem, 
+    bottom -32rem left 1rem;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: 30rem 100rem;
+    //background-color: #f7f7f7;
+    
+    margin-top: -28rem;
+    position: relative;
+    padding: 22rem;
+
+                    @include respond(tab-port){
+                    
+                        
+                    padding-left: 3rem;
+                    padding-right: 3rem;
+                    background-position: 
+                    top -30rem right 1rem, 
+                    bottom -32rem left 1rem;
+                    background-image: url(/images/undraw_travel_plans_li01.svg);
+                    background-position: bottom -32rem left 1rem;
+                    padding: 22rem 0.5rem;
+                        
+                        
+                    }
+
+
+                    
+                    @include respond(phone){
+                            
+                        background-image: none;
+                        padding-left: 1.0rem;
+                        padding-right: 1.5rem;
+                        
+                    }
+                    @include respond(phone-small){
+                            
+                        padding-left: 2.0rem;
+                        padding-right: 2.0rem;
+                        padding-bottom: 18rem;
+                        
+                    }
+                   
+
+    .tour__section-heading{
+
+        margin-top: -7rem;
+        padding-bottom: 3rem;
+    }
+
+
+    }
+
+
+
+
+.main__discover-button{
+    position: relative;
+    top: 12rem;
+    left: 50%;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 50;
+
+    @include respond(tab-port){
+        -webkit-transform: translate(-47%, -50%);
+                transform: translate(-47%, -50%);
+        top: 12rem;}
+
+
+        @include respond(phone){
+            -webkit-transform: translate(-47%, -50%);
+                    transform: translate(-47%, -50%);
+            top: 10rem;
+    }
+        @include respond(phone-small){
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+            top: 9rem;
+    }
+    
+}
+    
+.main__section-story{
+
+    background-color: #f7f7f7;
+    position: relative;
+    @include respond(phone){
+        margin-top: -5rem;
+        
+    }
+    
+}
+
+    .main__testimonials{
+        
+        padding-top: 7.5rem;
+        padding-bottom: 20rem;
+        display: grid;
+        grid-template-rows: repeat(4, minmax(32px, 1fr));
+        grid-template-columns: repeat(1, 1fr);
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        left: 50%;
+    
+        -webkit-transform: translateX(-50%);
+    
+                transform: translateX(-50%);
+        background-color: rgba(255, 255, 255, 0);
+        gap: 4rem;
+        position: relative;
+        
+        z-index: 2;
+
+        @include respond(tab-port){
+            padding-bottom: 20rem;
+        }
+        @include respond(phone-small){
+            
+            padding-bottom: 15rem;
+        }
+       
+
+    }
+
+
+    .main__story-button{
+
+
+    position: absolute;
+    top: 142rem;
+    left: 50%;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 6;
+
+    @include respond(tab-port){
+        top: 135rem;
+    }
+    @include respond(phone){
+        top: 143rem;
+    }
+    @include respond(phone-small){
+        top: 162.5rem;
+    }
+
+ }
+
+
+
+    .main__section-book{
+
+        
+   
+        padding: 2rem 10rem;
+        background: -webkit-gradient(linear, left top, right top, from(#52c234), to(#061700));
+        background: linear-gradient(to right, #52c234, #061700);
+        position: relative;
+
+        @include respond(tab-port){
+            padding: 2rem 2rem;
+        }
+        @include respond(phone){
+            padding: 0;
+        }
+        @include respond(phone-small){
+            padding: 0.5rem;
+        }
+
+        
+      &-box{
+
+        display: -webkit-box;
+
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+
+        .form-head{
+            margin-top: 6rem;
+            background-color: white;
+       
+             }
+      }  
+    
+        
+    }
+
+    .booking-form{
+
+        background-image: linear-gradient(110deg, rgba(255,255,255,0.8) 0%,
+                                                    rgba(255,255,255,0.8) 55%,
+                                                    transparent 50%),
+                                                    url(/images/travel-1.jpg);
+                                                    
+                                                    
+        
+        background-size: cover;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.3);
+        height: 50rem;
+        margin: 10rem 15rem;
+        padding: 5rem 3rem;
+
+
+        @include respond(tab-port){
+            margin: 10rem 6rem;
+        }
+        @include respond(phone){
+            
+            background-image: linear-gradient(110deg, rgba(255,255,255,0.8) 0%,
+                                                    rgba(255,255,255,0.8) 65%,
+                                                    transparent 50%),
+                                                    url(/images/travel-1.jpg);
+        }
+        @include respond(phone-small){
+            
+            background-image: linear-gradient(110deg, rgba(100, 100, 100, 0.8) 0%,
+                                                    rgba(100, 100, 100, 0.8) 100%,
+                                                    transparent 50%),
+                                                    url(/images/travel-1.jpg);
+            margin: 2rem;
+            padding: 1rem;
+
+        }
+
+    }
+   

@@ -1,0 +1,140 @@
+
+.row{
+
+   display: -webkit-box;
+
+   display: flex;
+   -webkit-box-pack: justify;
+           justify-content: space-between;
+ 
+
+}
+
+.grid__setup-feature{
+
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+    
+.grid__setup-tour{
+
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding-left: 3rem;
+
+    @include respond(tab-port){
+      
+        margin-top: 2rem;
+        padding-right: 4rem;
+        padding-left: 4rem;
+        gap: 1.5rem;
+        
+    }
+
+   
+
+    @include respond(phone){
+      
+        margin-top: 2rem;
+        padding-right: 4rem;
+        padding-left: 4rem;
+        .col-3-of-3{
+
+            padding-left: 0rem;
+        }
+
+    }
+    @include respond(phone-small){
+      
+        
+        padding-left: 8rem;
+    }
+    
+}
+
+
+
+
+
+
+
+.main__section-row{
+    position: absolute;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    height: 150rem;
+    &-column1{
+       -webkit-box-flex: 1;
+               flex: 1;
+    }
+
+    &-column2{
+       -webkit-box-flex: 1;
+               flex: 1;
+       width: 100%;
+    }
+
+
+
+}
+
+
+.col-1-of-2, 
+.col-2-of-2{
+
+    -webkit-box-flex: 1;
+
+            flex: 1;
+
+}
+
+.col-1-of-2{
+
+    padding-right: 3rem;
+}
+//container for holding "learn more button in about section"
+.btn-container{
+
+    display: block;
+    text-align: center;
+    padding: 4rem;
+    margin-top: 8rem;
+
+    @include respond(tab-port){
+        padding-top: 4.5rem;
+    }
+    @include respond(phone){
+        text-align: left;
+        padding-left: 10rem;
+        margin-top: -.5rem;
+    }
+    @include respond(phone){
+        text-align: left;
+        padding-left: 20rem;
+        margin-top: -.5rem;
+    }
+
+}
+
+
+.main__about-row{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem 5rem 0 5rem;
+    margin: 5rem 5rem 0 5rem;
+ 
+    @include respond(phone-small){
+        padding: 5rem 1.5rem 0 1rem;
+    margin: 5rem 1.5rem 5rem 2rem;
+    font-size: 1.7rem;
+   
+    }
+
+}

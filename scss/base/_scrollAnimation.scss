@@ -1,0 +1,38 @@
+
+
+//fade In animation on scroll
+
+.fade-in{
+
+    opacity: 0;
+  -webkit-transition: opacity 0.7s ease-in;
+  transition: opacity 0.7s ease-in;
+
+
+}
+
+.fade-in.appear{
+
+    opacity: 1;
+}
+
+//fade In animation on scroll
+
+
+
+.rightin{
+
+    
+    -webkit-animation: moveOutRight 0.7s forwards ease-out;
+
+    
+            animation: moveOutRight 0.7s forwards ease-out;
+}
+
+.rightin.appear{
+
+    -webkit-animation: moveInRight 0.7s forwards ease-in-out;
+
+            animation: moveInRight 0.7s forwards ease-in-out;
+}
+

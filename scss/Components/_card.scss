@@ -1,0 +1,285 @@
+/*for ALL Cards*/
+.card{
+
+    -webkit-perspective: 150rem;
+
+            perspective: 150rem;
+   
+    position: relative;
+    height:50rem;
+    width: 29rem;
+    
+    margin: 3rem 3rem 0 4rem;
+
+    @include respond(tab-port){
+      
+        
+
+            padding-left: 2rem;
+            margin: 2rem;
+            padding: 2rem;
+        
+    }
+
+    &__side{
+
+        height:50rem;    
+        width: 29rem;
+        position: absolute;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+        -webkit-transition: all 0.8s ease;
+        transition: all 0.8s ease;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+
+        &--front{
+            
+            background-color: white;
+        }
+
+        &--back{
+
+            
+            -webkit-transform: rotateY(180deg);
+
+            
+                    transform: rotateY(180deg);
+            position: relative;
+        }
+
+    }
+
+    &:hover &__side--front {
+       
+        -webkit-transform: rotateY(-180deg);
+       
+                transform: rotateY(-180deg);
+    }
+    &:active &__side--front {
+       
+        -webkit-transform: rotateY(-180deg);
+       
+                transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+    }
+    &:active &__side--back {
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+    }
+
+
+
+
+
+/*For tour package 1*/
+
+    &__package1-back{
+
+        background: -webkit-gradient( linear, left top, right bottom, from(#ffb900), to(#ff7730));
+
+        background: linear-gradient( to bottom right, #ffb900, #ff7730); 
+
+    }
+
+    /*For tour package 2*/
+
+    &__package2-back{
+
+        background: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485));
+
+        background: linear-gradient(to bottom right, #7ed56f, #28b485);  
+    }
+
+    /*For tour package 3*/
+    &__package3-back{
+
+        background: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
+
+        background: linear-gradient(to right bottom, #2998ff, #5643fa); 
+    }
+
+    //*****************card decorations//front side image*****************************/
+
+
+
+    &__image{
+
+        background-size: cover;
+        height: 27rem;
+        background-blend-mode: multiply;
+
+        
+        //clip-path: polygon(0 0, 100% 0, 100% 85%,0 100%);
+
+
+        &::before{
+
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 10rem;
+            position: absolute;
+            z-index: 5;
+            background-color:rgb(255, 255, 255);
+            top: 24rem;
+            left: 3.5rem;
+            border-radius: 55rem 0 0 0;
+            -webkit-transform: scale(1.6) rotate(-7deg);
+                    transform: scale(1.6) rotate(-7deg);
+        }
+
+        &-1{
+
+            background-image: -webkit-gradient( linear, left top, right bottom, from(#ffb900), to(#ff7730)), url(/images/nat-9.jpg);
+
+            background-image: linear-gradient( to bottom right, #ffb900, #ff7730), url(/images/nat-9.jpg);
+            
+        }
+        &-2{
+
+            background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485)), url(/images/nat-10.jpg);
+
+            background-image: linear-gradient(to bottom right, #7ed56f, #28b485), url(/images/nat-10.jpg);
+
+        }
+        &-3{
+
+            background-image: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa)), url(/images/nat-7.jpg);
+
+            background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(/images/nat-7.jpg);
+
+        }
+
+
+    }
+
+    //card decorations//front side heading
+
+    &__heading{
+        display: inline-block;
+        font-size: 1.6rem;
+        font-weight: 300;
+        line-height: normal;
+        text-transform: uppercase;
+        text-align: right;
+        position: absolute;
+        color: white;
+        top: 18rem;
+        z-index: 8;
+        padding: 1rem 0.5rem;
+        right: 0;
+        //padding-right: 0.5rem;
+        
+        box-shadow: 2px -2px 5px 0px rgba(0,0,0,0.75);
+
+       
+    }
+
+    &__heading1{
+
+        background-image: -webkit-gradient( linear, left top, right bottom, from(#ffb900), to(#ff7730));
+
+        background-image: linear-gradient( to bottom right, #ffb900, #ff7730);
+    }
+    &__heading2{
+
+        background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485));
+
+        background-image: linear-gradient(to bottom right, #7ed56f, #28b485);  
+    }
+    &__heading3{
+
+        background-image: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
+
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); 
+    }
+    
+
+    //card decorations//front side text
+
+
+    &__details{
+        position: absolute;
+        width: 80%;
+        list-style-type: none;
+        //padding: 1rem;
+        text-transform: uppercase;
+        z-index: 100;
+        
+
+
+        ul{
+            text-align: center;
+            list-style-type: none;
+            margin: -2rem -3rem 0 3rem;
+            
+
+
+            li{ 
+
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 0.8rem;
+
+                &:not(:last-child){
+
+                    border-bottom: 1px solid #c9c9c9;
+                }
+            }
+        }
+
+
+
+    }
+
+/*************************************Card Back Side styling **********************************/
+
+
+    &__cta{
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+    }
+        &__price-only{
+
+            margin-top: 3rem;
+            font-size: 1.5rem;
+            color: white;
+            font-weight: 300;
+            text-transform: uppercase;
+            
+        }
+
+        &__price-value{
+
+           
+            font-size: 6rem;
+            font-weight: 100;
+            color: white;
+        }
+
+        &__book{
+
+            margin-top: 10rem;
+        }
+    
+
+}
+
+
+
+
+
+
+
