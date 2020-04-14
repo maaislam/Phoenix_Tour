@@ -1,0 +1,23 @@
+{
+  "name": "phoenix-tours",
+  "version": "1.0.0",
+  "description": "travel agency",
+  "main": "index.js",
+  "scripts": {
+    
+    "concat:css": "concat -o build/main.css images/fontawesome-free-5.12.1-web/css/all.css scss/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maaislam/Phoenix_Tour.git"
+  },
+  "author": "Arafat Islam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maaislam/Phoenix_Tour/issues"
+  },
+  "homepage": "https://github.com/maaislam/Phoenix_Tour#readme",
+  "devDependencies": {
+    "concat": "^1.0.3"
+  }
+}
